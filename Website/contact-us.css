@@ -1,0 +1,105 @@
+html {
+    background-image: url(contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    background-color: purple;
+}
+
+/*Form Styles*/
+
+form {
+    background-color: #dbdcdc;
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+input ,
+select {
+    font-family: tahoma, sans-serif;
+    font-size: 100%;
+}
+
+input[type="email"] ,
+input[type="password"] ,
+input[type="text"] ,
+input[type="number"] ,
+input[type="tel"] ,
+select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height:40px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+input[type="email"]:focus ,
+input[type="password"]:focus ,
+input[type="text"]:focus ,
+input[type="number"]:focus ,
+input[type="tel"]:focus  { 
+    border: 1px solid black;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #953690;
+    color: #fff;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover ,
+input[type="submit"]:focus {
+    border: 1px solid #783486;
+    background-color: #762973;
+}
+
+.checkbox-text {
+    font-size: 85%;
+    color: #a82cb9;
+}
+/*End of Form Styles*/
+
+a {
+    text-decoration: none;
+}
+
+<?php
+
+$errors = [];
+
+if (!empty($_POST)) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+ 
+  if (empty($name)) {
+      $errors[] = 'Name is empty';
+  }
+
+  if (empty($email)) {
+      $errors[] = 'Email is empty';
+  } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $errors[] = 'Email is invalid';
+  }
+}

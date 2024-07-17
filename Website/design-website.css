@@ -1,0 +1,254 @@
+html {
+    background-image: url(pic.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    animation-name: fadeBounce;
+    animation-duration: 3s;
+}
+
+@keyframes fadeBounce{
+
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    }
+    
+    /*end bounce animation*/
+
+header {
+    font-size: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    text-shadow: 2px 10px 3px rgba(218, 218, 218, 0.756);
+    text-align: left;
+    color: #a14fbc;
+}
+
+img {
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .col-col-xs-6 {
+        width: 100%;
+        height: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    
+    }
+}
+
+/*UI menu*/
+.ui-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.ui-menu li {
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+/*End UI menu*/
+
+.nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid purple;
+    background-color: #fff
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.nav a:hover {
+    background-color: rgb(158, 54, 158);
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.quote {
+    background-color: purple;
+}
+
+/*follow*/
+.us ul {
+    margin: 0;
+    padding: 0;
+}
+
+.us li {
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.us a {
+    display:block ;
+    text-decoration: none;
+}
+/*End follow*/
+
+h3 {
+    text-align: center;
+    font-size: 60px;
+    color: #762973;
+}
+
+h4 {
+    font-size: 33px;
+}
+
+p {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 90px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    text-align: center;
+    color: #762973;
+}
+
+.container {
+    width: 100%;
+    float: left;
+    background-color: #983cb7;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #6b2a81, #fff);
+}
+
+.quote {
+    width: 100%
+}
+
+.box-a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid purple;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #a14fbc, #fff);
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+}
+
+.margin {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/*Form Styles*/
+
+form {
+    background-color: #dbdcdc;
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+input ,
+select {
+    font-family: tahoma, sans-serif;
+    font-size: 100%;
+}
+
+input[type="email"] ,
+input[type="password"] ,
+input[type="text"] ,
+input[type="number"] ,
+input[type="tel"] ,
+select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height:40px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+input[type="email"]:focus ,
+input[type="password"]:focus ,
+input[type="text"]:focus ,
+input[type="number"]:focus ,
+input[type="tel"]:focus  { 
+    border: 1px solid black;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #953690;
+    color: #fff;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover ,
+input[type="submit"]:focus {
+    border: 1px solid #783486;
+    background-color: #762973;
+}
+
+.checkbox-text {
+    font-size: 85%;
+    color: #a82cb9;
+}
+/*End of Form Styles*/
+
+a {
+    color: black;
+}
+
+footer {
+    background-color: #953690;
+    margin-top: 20px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.div a {
+    text-decoration: none;
+}
